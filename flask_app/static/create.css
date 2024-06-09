@@ -1,0 +1,17 @@
+input{display: flex; border-radius: 50px;background-color: black;color: azure;padding-right: 86px;padding-bottom: 15px;}
+form{margin-left: 40%;
+    margin-top: 60px;
+}
+body{background-image: url(therealone.jpeg);
+    color: aliceblue;
+    font-weight: bolder;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 115%;
+   font-size: larger;
+}
+select{background-color: black; color: aliceblue;}
+h1{margin-left: 33%;margin-top: 50px;}
+duedate{margin-top: 100px;}
+.date{padding: 0%;}
+#submit{padding: 1%;}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='create.css') }}">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="tagline">Name your Task  and its due Date 🗓</h1>
+
+    <form action="/showtask" method="post">
+<label for="task">Task</label>
+<input type="text" name="task" id="task" placeholder="Task to Do ✅✅✅">
+<label for="duedate" class="date">Due date</label>
+<input type="date" name="due_date" class="date">
+<div>
+
+    <label for="priority">Priority</label>
+</div>
+<select name="priority">
+    <option value="Low priority">Last Priority ⭐️</option>
+    <option value="Second priority">Second Priority ⭐️⭐️</option>
+    <option value="High priority">Top Priority ⭐️⭐️⭐️</option>
+  </select>
+  <input type="hidden" name="user_id" value="{{session['user_id']}}" >
+
+<input type="submit" value="Add to List 📝">
+
+    </form>
+</body>
+</html>
